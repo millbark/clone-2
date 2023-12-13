@@ -1,0 +1,311 @@
+/*메인비주얼 부분*/
+.slide {
+  margin-top: 54px;
+}
+.slide img {
+  width: 1903px;
+}
+.hidden {
+  display: none;
+}
+
+.main-visual-area > button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  background: none;
+}
+.main-visual-area > button:first-child {
+  z-index: 10;
+  transform: rotate(45deg);
+  left: 87px;
+}
+.main-visual-area > button:last-child {
+  transform: rotate(225deg);
+  right: 87px;
+}
+
+.main-visual-area ul li p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 42px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+.main-visual-area ul li p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 15px;
+  background: url(../images/sp_common.png) no-repeat -164px -48px;
+}
+.main-visual-area img {
+  width: 1203px;
+}
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-arrow {
+  width: 300px;
+  background: none;
+  font-size: 0;
+}
+.slide ul .slick-arrow::after {
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+}
+.slide ul .slick-prev::after {
+  left: 100px;
+  border-style: solid;
+  border-color: transparent #000 #000 transparent;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.slide ul .slick-next::after {
+  right: 120px;
+  border-style: solid;
+  border-color: transparent #000 #000 transparent;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.slide-button-area {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.btn {
+  position: absolute;
+  z-index: 3;
+}
+.btn_pause {
+  background: url("../images/btn_rolling_s_stop.png") no-repeat;
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn_pause.on {
+  background: url("../images/btn_rolling_s_play.png") no-repeat;
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+/*메인오더 부분*/
+
+.main-order-area {
+  height: 282px;
+  letter-spacing: -4px;
+}
+.main-order-area ul li {
+  width: 398px;
+  padding: 58px 0 0 72px;
+}
+.main-order-area ul li a {
+  display: block;
+  height: 100%;
+}
+.main-order-area ul li a::before {
+  display: block;
+  content: "";
+  width: 52px;
+  height: 38px;
+  margin-bottom: 14px;
+  background: url(../images/sp_common.png) no-repeat;
+}
+.main-order-area ul li:nth-child(1) a::before {
+  background-position: -196px -280px;
+}
+.main-order-area ul li:nth-child(2) a::before {
+  background-position: -263px -280px;
+}
+.main-order-area ul li:nth-child(3) a::before {
+  background: url(../images/icon/ico-quick3.png) no-repeat;
+}
+.main-order-area ul li strong {
+  position: relative;
+  font-size: 42px;
+  font-weight: 300;
+}
+.main-order-area ul li:nth-child(1) strong {
+  color: #ff143c;
+}
+.main-order-area ul li:nth-child(2) strong {
+  color: #1382ff;
+}
+.main-order-area ul li:nth-child(3) strong {
+  color: #333;
+}
+.main-order-area ul li strong::before,
+.main-order-area ul li strong::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+.main-order-area ul li strong::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.main-order-area ul li:nth-child(1) strong::before {
+  background: #ff143c;
+}
+.main-order-area ul li:nth-child(2) strong::before {
+  background: #1382ff;
+}
+.main-order-area ul li:nth-child(3) strong::before {
+  background: #333;
+}
+.main-order-area ul li strong::after {
+  top: 20px;
+  right: -28px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+
+.main-order-area ul li p {
+  padding-top: 18px;
+  line-height: 24px;
+  color: #888;
+  font-size: 16px;
+  font-weight: 500px;
+  letter-spacing: -0.75px;
+}
+
+/*메인 멤버쉽 부분*/
+.main-membership-area {
+  padding: 110px 0;
+  background-color: #f6f6f6;
+}
+.main-membership-area h3 {
+  width: 360px;
+  white-space: pre-line;
+  line-height: 38px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.main-membership-area div p {
+  width: 103px;
+  height: 43px;
+  margin-top: 37px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 16px;
+  background: #222;
+}
+.main-membership-area div p a {
+  display: block;
+  color: #fff;
+}
+.main-membership-area h3 strong {
+  color: #238ece;
+  font-weight: 700;
+}
+.main-membership-area ul {
+  margin-left: 54px;
+}
+.main-membership-area ul li {
+  display: inline-block;
+}
+
+/*메인 배너 부분*/
+.main-banner-area {
+  border-bottom: 1px solid #f1f1f1;
+}
+.main-banner-area .inner {
+  display: flex;
+  padding: 80px 0;
+}
+.main-banner-area .inner ul {
+  display: flex;
+  overflow: hidden;
+  margin: 0 60px;
+  width: 100%;
+}
+.main-banner-area .inner ul li {
+  width: 30%;
+}
+.main-banner-area .inner ul li img {
+  width: 100%;
+}
+.main-banner-area .inner ul li ~ li {
+  padding-left: 18px;
+}
+.banner-slide .slick-arrow {
+  width: 300px;
+  background: none;
+  font-size: 0;
+}
+.banner-slide .slick-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.banner-slide .slick-prev::after {
+  border-style: solid;
+  border-color: transparent #000 #000 transparent;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.banner-slide .slick-next::after {
+  border-style: solid;
+  border-color: transparent #000 #000 transparent;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* .banner-slide button::before {
+  font-family: xeicon;
+  color: aliceblue;
+}
+.slick-prev {
+  left: -70px;
+}
+.slick-prev::before {
+  content: "\e93b";
+  font-size: 20px;
+}
+.slick-next {
+  right: -70px;
+}
+.slick-next::before {
+  content: "\e93e";
+  font-size: 20px;
+} */

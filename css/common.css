@@ -1,0 +1,324 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.inner {
+  width: 1200px;
+  margin: auto;
+}
+button {
+  cursor: pointer;
+}
+body {
+  width: 1912px;
+  font: 500 18px "Roboto", sans-serif;
+  color: #111;
+  line-height: 1;
+  letter-spacing: -0.75px;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: 85px;
+  padding-top: 26px;
+  background: #fff;
+}
+header .inner {
+  position: relative;
+}
+.header-top {
+  position: relative;
+  height: 76px;
+}
+.header-top h1 {
+  background: url(../images/sp_common.png) no-repeat 0 0;
+}
+.header-top h1 a {
+  display: block;
+  width: 155px;
+  height: 34px;
+}
+.header-top p {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 346px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header-top p a {
+  position: relative;
+  display: block;
+  width: 346px;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 35px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+.header-top p a::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url(../images/sp_common.png) no-repeat -164px 0;
+}
+.header-top ul {
+  height: 27px;
+  line-height: 27px;
+  margin-top: 13px;
+}
+.header-top li {
+  height: 100%;
+  padding-left: 22px;
+  font-size: 14px;
+}
+.header-top li select {
+  width: 60px;
+  height: 100%;
+  border: 1px solid #888;
+  border-radius: 13px;
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+}
+.header-bottom {
+  left: 0;
+  top: 85px;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  font-weight: 500;
+  background: #fff;
+}
+.header-bottom a {
+  display: block;
+}
+
+.header-bottom li ~ li a {
+  height: 100%;
+  padding: 0 60px;
+}
+.header-bottom li:first-child a {
+  margin-right: 60px;
+}
+.header-bottom li span{
+  position: relative;
+}
+.header-bottom li span::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom:-5px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  transition: all 0.5s;
+}
+.header-bottom li:hover span::after{
+  width: 100%;
+}
+
+.header-bottom button {
+  position: absolute;
+  top: 0px;
+  padding: 0 23px 0 23px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  background: #fff;
+}
+.header-bottom button:after {
+  content: "";
+  position: absolute;
+  top:18px;
+  right: 2px;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+
+
+
+
+
+footer{
+  box-sizing: content-box;
+  padding-top: 50px;
+}
+.footer-top-area{
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.footer-top-area p>strong::before{
+  display: inline-block;
+  content: '';
+  width: 123px;
+  height: 30px;
+  margin-right: 13px;
+  background: url(../images/sp_common.png) no-repeat 0 -45px;}
+  .footer-top-area p>strong{
+  font-size: 30px;
+  font-weight: 600;
+  }
+  .footer-top-area ul{
+    margin: 26px 0 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888;
+  }
+
+  .footer-top-area ul li~li a{
+    display: block;
+    padding-left: 20px;
+  }
+  .footer-top-area ul li strong{
+    color: #111;
+  }
+  .footer-top-area address{
+    line-height: 21px;
+    font-size: 12px;
+    color: #888;
+  }
+  .footer-top-area address small{
+    display: block;
+    padding-bottom: 20px;
+  }
+.inner-right select{
+width: 174px;
+margin-bottom: 20px;
+border-bottom: 1px solid #111;
+font-size: 15px;
+color:#888
+}
+.inner-right dl{
+  position: relative;
+  margin-bottom: 110px;
+}
+.inner-right dt{
+  line-height: 30px;
+  font-size: 13px;
+}
+.inner-right dd{
+  width: 20px;
+  height: 26px;
+  font-size: 0px;
+}
+.inner-right dd::before{
+  position: absolute;
+  top: 0;
+  content: '';
+  background: url(../images/sp_common.png) no-repeat;
+  
+}
+.inner-right dd:nth-child(2)::before{
+  left: 105px;
+  width: 20px;
+  height: 26px;
+  background-position: -446px 0;
+}
+.inner-right dd:nth-child(3)::before{
+  left: 145px;
+  width: 20px;
+  height: 23px;
+  background-position: -478px 0;
+}
+
+.inner-right ul li{
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 22px;
+}
+.inner-right ul li::before{
+  position: absolute;
+  content: '';
+  opacity: .6;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/sp_common.png) no-repeat;
+}
+.inner-right ul li:nth-child(1)::before{
+  width: 13px;
+  height: 20px;
+  background-position: -510px 0;
+}
+.inner-right ul li:nth-child(2)::before{
+  width: 21px;
+  height: 21px;
+  background-position: -532px 0;
+}
+.inner-right ul li:nth-child(3)::before{
+  width: 11px;
+  height: 22px;
+  background-position: -563px 0;
+}
+.inner-right ul li:nth-child(4)::before{
+  width: 25px;
+  height: 19px;
+  background-position: -585px 0;
+}
+.inner-right ul li:nth-child(5)::before{
+  width: 23px;
+  height: 22px;
+  background-position: -619px 0;
+}
+.footer-bottom-area{
+  width: 100%;
+  padding: 30px 0;
+  background: #f6f6f6;
+}
+.footer-bottom-area ul{
+  display: flex;
+  width: 100%;
+}.footer-bottom-area li{
+  position: relative;
+  padding-left: 45px;
+  font-size: 11px;
+}
+.footer-bottom-area li~li{
+  margin-left: 20px;
+}
+.footer-bottom-area li::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 37px;
+  height: 37px;
+background:no-repeat 0 0;
+}
+.footer-bottom-area li:nth-child(1)::before{
+  background-image: url(../images/footer/list_1.png);
+}
+.footer-bottom-area li:nth-child(2)::before{
+  background-image: url(../images/footer/list_2.png);
+}
+.footer-bottom-area li:nth-child(3)::before{
+  background-image: url(../images/footer/list_3.png);
+}
+.footer-bottom-area li:nth-child(4)::before{
+  background-image: url(../images/footer/list_4.png);
+}
+.footer-bottom-area li:nth-child(5)::before{
+  background-image: url(../images/footer/list_5.png);
+}
+.footer-bottom-area li:nth-child(6)::before{
+  background-image: url(../images/footer/list_6.png);
+}
+.footer-bottom-area li span{
+  display: block;
+  line-height: 16px;
+  color: #888;
+}
